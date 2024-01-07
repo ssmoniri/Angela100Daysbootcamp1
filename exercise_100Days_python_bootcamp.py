@@ -9,7 +9,7 @@ Created on Wed Jan  3 20:48:08 2024
 #Exercise dict
 
 
-student_scores = {
+student_scores =
   "Harry": 81,
   "Ron": 78,
   "Hermione": 99, 
@@ -93,6 +93,43 @@ while bidding_finished != False: #or while not bidding_finished
 
 
 
+
+#*************************************
+        #calculator 
+def add (n1, n2):
+   return n1 + n2
+
+#substraction
+def substract (n1, n2)
+   return n1-n2
+
+#multiplication
+def multiply (n1, n2)
+   return n1*n2
+
+#division
+def divide (n1, n2)
+  return n1 / n2
+  
+operation = {
+   "+" : add,
+   "-" : substract,
+   "*" : multiply,
+   "/" : divided
+   
+}
+num1 = int(input("what is the first number? "))
+
+
+for operand in operation:
+   print(operand)
+
+num2 = int(input("what is the second number? "))
+operan = input("pick up an operand. ")
+
+calculation_function = operation[operand]
+answer = calculation_function ( num1, num2)
+print(answer)
 
 
 
